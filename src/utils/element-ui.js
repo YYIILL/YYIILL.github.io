@@ -3,7 +3,7 @@ import Vue from 'vue';
 import {
     Button, Form, Card, Row, FormItem, Input, Col, Menu, Submenu, MenuItem,
     MenuItemGroup, Container, Aside, Main, Header, Dropdown, DropdownMenu,
-    DropdownItem, Table, TableColumn,
+    DropdownItem, Table, TableColumn, Avatar, Link, Popconfirm,
 } from 'element-ui';
 
 Vue.use(Button);
@@ -25,4 +25,7 @@ Vue.use(Dropdown);
 Vue.use(DropdownMenu);
 Vue.use(DropdownItem);
 Vue.use(Table);
+Vue.use(Avatar);
+Vue.use(Link);
 Vue.use(TableColumn);
+Vue.use(Popconfirm);

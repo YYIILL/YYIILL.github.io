@@ -40,7 +40,7 @@ export default {
     async submit() {
       await this.$refs.form.validate();
       console.log('校验通过');
-      this.$store.dispatch('user/login', this.user);
+      await this.$store.dispatch('user/login', this.user);
       this.$router.push('/');
     },
     reset() {
