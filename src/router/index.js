@@ -12,6 +12,16 @@ const routes = [
   {
     path: '/',
     component: () => import('../views/HomePage.vue'),
+    children: [
+      {
+        path: '/dashboard',
+        component: () => import('../views/DashBoard.vue'),
+      },
+      {
+        path: '/article',
+        component: () => import('../views/ArticleManage.vue'),
+      },
+    ],
   },
   {
     path: '*',

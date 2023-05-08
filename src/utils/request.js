@@ -9,7 +9,6 @@ axios.defaults.baseURL = 'http://interview-api-t.itheima.net/';
 axios.interceptors.request.use(
     (config) => {
         const { token } = store.state.user;
-        console.log(token);
         if (token) {
             // eslint-disable-next-line no-param-reassign
             config.headers.Authorization = `Bearer ${token}`;

@@ -4,13 +4,8 @@
     <el-container class="layout-page">
       <el-aside width="200px">
         <div class="logo">黑马面经</div>
-        <el-menu
-          router
-          :default-active="$route.path"
-          background-color="#313a46"
-          text-color="#8391a2"
-          active-text-color="#FFF"
-        >
+        <el-menu router :default-active="$route.path" background-color="#313a46"
+        text-color="#8391a2" active-text-color="#FFF" >
           <el-menu-item index="/dashboard">
             <i class="el-icon-pie-chart"></i>
             <span>数据看板</span>
@@ -24,10 +19,7 @@
       <el-container>
         <el-header>
           <div class="user">
-            <el-avatar
-              :size="36"
-              :src="avatar"
-            ></el-avatar>
+            <el-avatar :size="36" :src="avatar"></el-avatar>
             <el-link :underline="false">{{ name }}</el-link>
           </div>
           <div class="logout">
@@ -132,12 +124,4 @@ export default {
     }
   }
 
-  .el-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #aaa;
-    border-top: 1px solid rgba(152, 166, 173, 0.2);
-    font-size: 14px;
-  }
 }</style>
