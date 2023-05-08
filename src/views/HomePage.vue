@@ -29,6 +29,10 @@
           </div>
         </el-header>
         <el-main>
+           <el-breadcrumb separator="/" class="breadcrumb">
+            <el-breadcrumb-item :to="{ path: '/' }">面经后台</el-breadcrumb-item>
+            <el-breadcrumb-item><a href="/">活动管理</a></el-breadcrumb-item>
+          </el-breadcrumb>
           <router-view></router-view>
         </el-main>
       </el-container>
@@ -123,5 +127,7 @@ export default {
       padding: 0 15px;
     }
   }
-
+.breadcrumb{
+  margin-bottom: 20px;
+}
 }</style>
